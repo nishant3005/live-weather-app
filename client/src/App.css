@@ -1,0 +1,51 @@
+.box {
+  background-color: rgb(182, 227, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-image {
+  height: 40px;
+  width: 40px;
+}
+
+.weather-container {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  width: 40vw;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .weather-container {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .weather-container {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .weather-container {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .weather-container {
+    width: 95vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
